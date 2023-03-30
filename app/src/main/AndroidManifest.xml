@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ear"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ear"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ApplicationForAB"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.project_app.TableActivityForDriverReview"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.StatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.ChooseDateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.TableActivityForCustomer"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.TableActivityForDriver"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.AuthorizationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.project_app.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+
+</manifest>

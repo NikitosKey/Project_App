@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">С.У.А.Р.К.</string>
+
+    <!-- первая страница -->
+    <string name="firstMeeting">ВЫБЕРИТЕ КАТЕГОРИЮ</string>
+    <string name="buttonForCustomer">Заказчик</string>
+    <string name="buttonForDriver">Водитель</string>
+    <string name="buttonForStatistic">Статистика</string>
+    <string name="staticsticNone">Эта функция доступна в premium-версии!</string>
+
+    <!-- страница авторизации -->
+    <string name="inputUrNameHint">Введите ваше ФИО</string>
+    <string name="confirmUserName">Подтвердить</string>
+    <string name="toPreviousActivity">В главное меню</string>
+
+    <!-- страница с настройками заказчика -->
+    <string name="chooseDate">Изменить дату</string>
+    <string name="tableCountBunker">Кол-во бункеров:</string>
+    <string name="tableDate">Дата:</string>
+    <string name="gotoTable">Перейти к таблице</string>
+
+    <!-- страница с таблицей заказчика/водителя-->
+    <string name="tableBunkerList">Список бункеров</string>
+    <string name="confirmData">Подтвердить</string>
+    <string name="back">Назад</string>
+
+    <string name="tableNumber">№</string>
+    <string name="tableFeedBrand">Марка корма</string>
+    <string name="tablePlan">План</string>
+    <string name="tableFact">Факт</string>
+
+    <!-- страница со статистикой-->
+    <string name="tableDriver">Водитель</string>
+    <string name="tableTotalText">Всего:</string>
+
+    <string name="dataSaved">Данные сохранены</string>
+
+</resources>

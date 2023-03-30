@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "172899500280",
+    "firebase_url": "https://application-for-ab-a6dac-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "application-for-ab-a6dac",
+    "storage_bucket": "application-for-ab-a6dac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172899500280:android:69b9fc4bb73363eb743b0d",
+        "android_client_info": {
+          "package_name": "com.example.itogproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172899500280-bgb4qehj3fq0jfabtpf2g0tc31rs9tmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuBttQwkHHCO1fuvtKvXeUHQ6C0kcMES0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172899500280-bgb4qehj3fq0jfabtpf2g0tc31rs9tmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TableActivityForDriver">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/teal_200"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="jumpToBack"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_back"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:fontFamily="@font/days_one"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_bunkers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="50dp"
+
+        android:text="@string/tableBunkerList"
+        android:fontFamily="@font/days_one"
+        android:textColor="@color/teal_200"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:textSize="28sp"
+        android:gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar" />
+
+    <TableLayout
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_bunkers">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/column_number"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/days_one"
+                android:textSize="18sp"
+                android:textColor="@color/baseTextColor"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/tableNumber" />
+
+            <TextView
+                android:id="@+id/column_feed_brand"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:fontFamily="@font/days_one"
+                android:textSize="18sp"
+                android:textColor="@color/baseTextColor"
+                android:gravity="center"
+                android:text="@string/tableFeedBrand" />
+
+            <TextView
+                android:id="@+id/column_plan"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/days_one"
+                android:textSize="18sp"
+                android:textColor="@color/baseTextColor"
+                android:gravity="center"
+                android:text="@string/tablePlan" />
+
+            <TextView
+                android:id="@+id/column_fact"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:fontFamily="@font/days_one"
+                android:textSize="18sp"
+                android:textColor="@color/baseTextColor"
+                android:gravity="center"
+                android:text="@string/tableFact" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_header">
+
+        <TableLayout
+            android:id="@+id/table_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TableLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/table_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:fontFamily="@font/days_one"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="@string/tableDate"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/button_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+
+        android:text="@string/confirmData"
+        android:textColor="@color/white"
+        android:fontFamily="@font/days_one"
+        android:textSize="20sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        app:cornerRadius="16dp"
+        android:backgroundTint="@color/teal_200"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

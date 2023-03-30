@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abril_fatface</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/days_one</item>
+        <item>@font/erica_one</item>
+        <item>@font/goldman_bold</item>
+        <item>@font/montaga</item>
+        <item>@font/montez</item>
+        <item>@font/revalia</item>
+        <item>@font/space_mono_bold</item>
+    </array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/teal_200"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ear"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/customerButton"
+        app:srcCompat="@drawable/ear" />
+
+    <Button
+        android:id="@+id/customerButton"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/days_one"
+        android:onClick="jumpToSecondPageForCustomer"
+        android:shadowColor="@color/black"
+        app:cornerRadius="16dp"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        android:text="@string/buttonForCustomer"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/driverButton"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerButton"
+        android:layout_marginTop="24dp"
+
+        android:textSize="28sp"
+        android:text="@string/buttonForDriver"
+        android:textColor="@color/white"
+        android:fontFamily="@font/days_one"
+        android:shadowColor="@color/black"
+        app:cornerRadius="16dp"
+        android:shadowDx="3"
+        android:shadowDy="4"
+        android:shadowRadius="1"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="jumpToSecondPageForDriver"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerButton"
+        tools:ignore="UsingOnClickInXml"
+        />
+
+    <Button
+        android:id="@+id/statisticButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driverButton"
+
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/days_one"
+        android:onClick="jumpToStatistic"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        android:text="@string/buttonForStatistic"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.849"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
